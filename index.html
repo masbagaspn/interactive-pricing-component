@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <div class="introduction-container">
+      <h2 class="text">Simple, traffic-based pricing</h2>
+      <p class="desc">Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+    <div class="card-container">
+      <div class="top-container">
+
+        <div class="row">
+          <h4 class="pageviews">100K PAGEVIEWS</h4>
+          <div class="price-container">
+            <h1 class="price">$16.00</h1>
+            <small class="duration">/ month</small>
+          </div>
+        </div>
+        
+        <div class="slider-container">
+          <div class="progress-bar"></div>
+          <input class="slider" type="range" name="price" id="price" min="0" max="4">
+        </div>
+  
+        <div class="row-2">
+          <p class="monthly">Monthly Billing</p>
+          <label class="switch active">
+            <input class="checkbox" type="checkbox">
+            <span class="toggle"></span>
+          </label>
+          <p class="yearly">Yearly Billing</p>
+          <div class="disc-container">
+            <small class="discount">25% discount</small>
+          </div>
+        </div>        
+      </div>
+
+      <hr>
+
+      <div class="bottom-container">
+
+        <div class="column">
+          <ul class="feature">
+            <li class="feature-list">Unlimited websites</li>
+            <li class="feature-list">100% data ownership</li>
+            <li class="feature-list">Email reports</li>
+          </ul>
+        </div>
+
+        <button class="btn btn-trial">Start my trial</button>
+      </div>
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./script.js"></script>
+</body>
+</html>
